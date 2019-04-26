@@ -1,0 +1,22 @@
+feature: Validar el proceso de aumento de cupo de tarjeta de credito
+Se quiere aumentar el cupo de la tarjeta de credito
+
+Scenario: Ingresar datos de la tarjeta de credito a aumentar
+Given El usuario esta en la pagina donde se ingresa los datos de la tarjeta de credito a aumentar
+When El usuario ingresa el numero de la tarjeta de credito
+Then Se muestra el numero de la tarjeta ingresado y los datos del dueño
+
+Scenario: Consultar si el dueño de la tarjeta ingresado posee DICOM
+Given El usuario ya ha ingresado el numero de la tarjeta de credito y se tiene los datos del dueño
+When El usuario hace clic sobre el boton consultar DICOM
+Then Se muestra mensaje de confirmacion de la consulta realizada
+
+Scenario: ingresar el sueldo del dueño de la tarjeta DICOM
+Given El usuario ya ha consultado que el dueño de la tarjeta no posee DICOM
+When el usuario Ingresa sueldo del dueño de la tarjeta
+Then Se muestra el sueldo ingresado 
+
+Scenario: realizar el aumento de la tarjeta de credito
+Given El usuario esta en la pagina con todos los datos ingresados
+when el usuariohace clic en el boton Aumentar cupo
+Then se muestra mensaje que su el aumento de la tarjeta de credito ha sido efectuado exitosamente
