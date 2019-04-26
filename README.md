@@ -5,7 +5,7 @@ Ejercicio práctico de automatización
 									
 	fixture `First Test`								
 									
-	runner.browsers(['firefor','safari']);								
+	runner.browsers(['firefor','chrome']);								
 									
 	test('First Test - Realizar compra de un PS4', async function(t){								
 		const buscar = Selector ('[name="q"]');							
