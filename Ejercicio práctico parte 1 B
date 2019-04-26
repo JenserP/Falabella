@@ -27,7 +27,7 @@ when el usuario hace clic en uno de los metodos de envio
 Then se muestra el metodo de envio seleccionado
 
 Scenario: Ir a las opciones de pago
-Given El producto se encuentra en el carrito de compra y se ha seleccionado un metódo de envío
+Given El producto se encuentra en el carrito de compra y se ha seleccionado un metodo de envio
 When el usuario hace clic en opciones de pago
 Then se muestra las opciones de pago disponible
 
@@ -37,6 +37,6 @@ when el usuario hace clic en uno de los metodos de pago
 Then se muestra el metodo de pago seleccionado
 
 Scenario: realizar el pago
-Given El producto se encuentra en el carrito de compra, se ha seleccionado un metódo de envío y un metodo de pago
+Given El producto se encuentra en el carrito de compra, se ha seleccionado un metodo de envio y un metodo de pago
 when el usuario ingresa los datos para pagar y hace clic en el boton pagar
 Then se muestra mensaje que su compra ha sido efectuado exitosamente
